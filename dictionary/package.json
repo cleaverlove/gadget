@@ -1,0 +1,20 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "description": "cmd to translate english-cn or cn-english use youdao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pmx": "./index"
+  },
+  "keywords": [
+    "translate"
+  ],
+  "author": "pmx",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.2.4"
+  }
+}
