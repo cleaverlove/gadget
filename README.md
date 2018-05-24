@@ -21,7 +21,9 @@ nodejs练手小项目
 
 ## 基于JSON Web Tokens权限认证的API
   express + jwt + mongoose  因为博文的创建时间较早，一些API已经过时了，已经进行重写。
+
   使用nodemon依赖，启动文件nodemon server.js  当文件修改时，会自动重启项目，无需手动
+  
   参考地址:https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens#toc-creating-a-sample-user
 
   使用postMan验证身份，并且获得token
@@ -36,7 +38,9 @@ nodejs练手小项目
 
   ## 基于Node和express4的RESTful API
   项目目录 RESTful-Nodejs-Api   启动项目 nodemon server.js
+
   参考地:https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+
   项目进行一些修改和重写
 
   API对应的路由和行为
@@ -51,16 +55,21 @@ nodejs练手小项目
 
 
   增加新用户前,mongodb数据
+
   ![post-before.png](./RESTful-Nodejs-Api/img/post-before.png)
+
 
   使用POSTMAN进行post方法测试，增加新用户
   ![post-users.png](./RESTful-Nodejs-Api/img/post-users.png) 
 
   增加新用户后，mongodb数据
+
   ![post-after.png](./RESTful-Nodejs-Api/img/post-after.png)
+
 
   put方法测试，修改用户信息并保存
   ![put.png](./RESTful-Nodejs-Api/img/put.png)
+
 
   delete方法测试，删除用户信息
   ![delete.png](./RESTful-Nodejs-Api/img/delete.png)
