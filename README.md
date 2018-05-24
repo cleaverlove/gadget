@@ -3,6 +3,8 @@ nodejs练手小项目
 
 ## 控制台输入-中英翻译
   dictionary文件夹
+  "英译汉"  node index.js today
+  "汉译英"  node index.js 今天
   
 ## cnode社区发布评论/爬取学校网站数据
   web_crawler文件夹
@@ -31,3 +33,34 @@ nodejs练手小项目
 
   元数据携带token,请求/api/users接口
   ![users.png](./node-token-jwt/img/users.png)
+
+  ## 基于Node和express4的RESTful API
+  项目目录 RESTful-Nodejs-Api   启动项目 nodemon server.js
+  参考地:https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+  项目进行一些修改和重写
+
+  API对应的路由和行为
+
+  |ROUTE                | HTTP Verb | description |
+  | :-----------------: | :-------: | :----------:|
+  | /api/users          | GET       | 获取全部用户 |
+  | /api/users          | POST      | 创建一个用户 |
+  | /api/users/:user_id | GET       | 获取一个用户 |
+  | /api/users/:user_id | PUT       | 更新用户信息 |
+  | /api/users/:user_id | DELETE    | 删除一个用户 |
+
+
+  增加新用户前,mongodb数据
+  ![post-before.png](./RESTful-Nodejs-Api/img/post-before.png)
+
+  使用POSTMAN进行post方法测试，增加新用户
+  ![post-users.png](./RESTful-Nodejs-Api/img/post-users.png) 
+
+  增加新用户后，mongodb数据
+  ![post-after.png](./RESTful-Nodejs-Api/img/post-after.png)
+
+  put方法测试，修改用户信息并保存
+  ![put.png](./RESTful-Nodejs-Api/img/put.png)
+
+  delete方法测试，删除用户信息
+  ![delete.png](./RESTful-Nodejs-Api/img/delete.png)
