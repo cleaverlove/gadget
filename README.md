@@ -75,3 +75,6 @@ nodejs练手小项目
 
   delete方法测试，删除用户信息
   ![delete.png](./RESTful-Nodejs-Api/img/delete.png)
+
+## 使用socket.io做的聊天室
+  Socket.io-Chat文件夹
