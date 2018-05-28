@@ -23,7 +23,12 @@ db.once('open', function() {
 app.use(bodyParser.urlencoded({extended: true}));  //是否识别 /:id  /:userId等
 app.use(bodyParser.json());
 app.use(morgan('dev'));
-app.use(session({secret:'restful'}));// ①
+// 这三个参数secret,resave,saveUninitialized 不传会警告
+app.use(session({
+    secret:'restful',
+    resave: false,
+    saveUninitialized: false,
+}));// ①
 
 function githubStrategyMiddleware(accessToken, refreshToken, profile, done) {
     profile.accessToken = accessToken;
