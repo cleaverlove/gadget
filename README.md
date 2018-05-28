@@ -41,7 +41,9 @@ nodejs练手小项目
 
   参考地:https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
 
-  项目进行一些修改和重写
+  项目进行一些修改和重写  
+  
+  2018/05/28补充: 使用了github的oAuth认证，只有使用github帐号进行登录才有权限获取API。
 
   API对应的路由和行为
 
