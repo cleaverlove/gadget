@@ -45,7 +45,7 @@ function githubMiddle(req, res, next) {
 function githubCallBackMiddle(req, res, next) {
     console.log(req.user);
     //auth/github/callback后, 可以通过req.user得到profile
-    res.redirect('/api'); //跳转到/api
+    res.redirect('/api'); //跳转到/api  响应头部会有Location: /api 浏览器进行重定向
 }
 //oAuth中间件
 app.use(passport.initialize());
