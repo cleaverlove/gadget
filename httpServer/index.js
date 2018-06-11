@@ -19,6 +19,7 @@ function serveStaticFile(res, path, contentType, responseCode) {
 
 serve.on('request', function(req, res) { 
 	//规范化url, 去掉查询字符串，可选的反斜杆，并把它变成小写
+	console.log(req.url);
 	var path = req.url.replace(/\/?(?:\?.*)?$/,'').toLowerCase();
 	console.log(path);
 	switch(path) {
@@ -30,6 +31,11 @@ serve.on('request', function(req, res) {
 			break;
 		case '/img/logo.jpg':
 			serveStaticFile(res, '/public/img/logo.jpg','image/jpeg');
+			break;
+		case '/xss':  //href="javascript:location.href='http://127.0.0.1:3000/xss?xss=sucess'"
+				res.writeHead(200,'xss sucess',{'content-type': 'text/plain; charset=utf-8'});
+				res.end('xss sucess');
+				
 		default:
 			serveStaticFile(res, '/public/nofound.html','text/html',404);
 			break;
